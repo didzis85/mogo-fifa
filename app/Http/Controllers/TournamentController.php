@@ -56,6 +56,7 @@ class TournamentController extends Controller
 		try {
 			
 			$tournament = Tournament::find($id);
+
 			return view('tournament.results', compact('tournament'));
 
 		} catch (\Exception $e) {
